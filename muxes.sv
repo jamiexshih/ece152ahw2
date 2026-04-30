@@ -5,7 +5,7 @@ module muxes (
   output logic y0_o, y1_o
   );
     // y0_o: 2-input mux with XOR
-    assign y0_o = (sel4_i[0]) ? c_i : (a_i ^ b_i);
+  assign y0_o = (sel4_i[1]) ? c_i : (a_i ^ b_i);
 
     // y1_o: 4-input mux
     always_comb begin
