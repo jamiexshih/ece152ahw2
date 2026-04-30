@@ -9,7 +9,7 @@ parameter WIDTH = 4
   logic [WIDTH-1:0] data2_d, data2_q;
   logic [WIDTH-1:0] data3_d, data3_q;
     
-  assign data_o = data_q;
+  assign data_o = data3_q;
   always_comb begin : data_set
       // data_d is set by combinational logic
       data_d = data_i;
